@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de selectores</title>
+</head>
+    <style> 
+    
+    /* Seleccionamos identificador " #titulo" para modificar el color*/
+    #titulo{
+                color: #008080;
+    }
+
+    /* Seleccionamos "p strong" para modificar el color*/
+     p strong {
+                color: red;
+     }
+     /* Seleccionamos "span" y la clase destacado  para modificar el color*/
+     span.destacado{    
+            color: #ffa500;
+     }
+    /* Seleccionamos identificador " #subtitulo" para modificar el color*/
+     #subtitulo { 
+                color: #0000ff;
+     }
+     /* Seleccionamos "a" para modificar el color*/
+     a { 
+        color: #ff0000
+        ;
+     }
+     /* Seleccionamos "a" y posteriormente "em" ya que queremos seleccionar el valor "em" que esta contenido en "a"  para modificiar el color*/
+     a em  {
+        color: #0606ff
+        ;
+     }
+     /* Seleccionamos identificador " #adicional" para modificar el color*/
+     #adicional {
+        color: #86860c;
+     }
+     /* Seleccionamos identificador " #especial" para modifciar le color*/
+     #especial {
+        font-weight: 600;
+        color: #ff12ff;
+    }
+    /* Seleccionamos " #captiion" para modificar el color*/
+    caption {
+            color: #0b0bff;
+    }
+    /* Seleccionamos "span"+ la clase ".especial" para modificar el color*/
+    span.especial {
+        color: #860c86;
+    }
+    /* Seleccionamos la clase ".especial" para modificar el color*/
+    .especial{ 
+        color: #ffa500 ;
+    }
+    /* Seleccionamos "td" para modificar el color */
+    td {
+        color:#008000;
+    }
+    /* Seleccionamos "th" para modificar el color*/
+    th {
+        color: red;
+    }
+    /* Seleccionamos "td" y "storng" para modificar el color */
+    td strong {
+        color: #ffa500;
+    }
+    /*Para definir la tabla implemtenamos las funciones border, border-collapse, padding dentro de table,tr,td y th*/
+    table, th,tr,td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+    /* Seleccionamos identificador " #adicional" y "a" p*/
+    #adicional a {
+        color: #0C860C
+        ;
+    }
+    </style>
+<body>
+<h1 id="titulo">Lorem ipsum dolor sit amet</h1>
+
+<p>Nulla pretium. Sed tempus nunc vitae neque. <strong>Suspendisse gravida</strong>, metus a scelerisque sollicitudin, lacus velit
+ultricies nisl, nonummy tempus neque diam quis felis. <span class="destacado">Etiam sagittis tortor</span> sed arcu sagittis tristique.</p>
+
+<h2 id="subtitulo">Aliquam tincidunt, sem eget volutpat porta</h2>
+
+<p>Vivamus velit dui, placerat vel, feugiat in, ornare et, urna.  <a href="#">Aenean turpis metus, <em>aliquam non</em>, tristique in</a>, pretium varius,
+sapien. Proin vitae nisi.  Suspendisse <span class="especial">porttitor purus ac elit</span>. Suspendisse eleifend odio at dui. In in elit sed metus pretium elementum.</p>
+
+<table summary="Descripción de la tabla y su contenido">
+<caption>Título de la tabla</caption>
+<thead>
+  <tr>
+    <th scope="col"></th>
+    <th scope="col" class="especial">Título columna 1</th>
+    <th scope="col" class="especial">Título columna 2</th>
+  </tr>
+</thead>
+
+<tfoot>
+  <tr>
+    <th scope="col"></th>
+    <th scope="col">Título columna 1</th>
+    <th scope="col">Título columna 2</th>
+  </tr>
+</tfoot>
+
+<tbody>
+  <tr>
+    <th scope="row" class="especial">Título fila 1</th>
+    <td>Donec purus ipsum</td>
+    <td>Curabitur <em>blandit</em></td>
+  </tr>
+  <tr>
+    <th scope="row">Título fila 2</th>
+    <td>Donec <strong>purus ipsum</strong></td>
+    <td>Curabitur blandit</td>
+  </tr>
+</tbody>
+</table>
+
+<div id="adicional">
+<p>Donec purus ipsum, posuere id, venenatis at, <span>placerat ac, lorem</span>. Curabitur blandit, eros sed gravida aliquet, risus justo
+porta lorem, ut mollis lectus tortor in orci. Pellentesque nec augue.</p>
+
+<p>Fusce nec felis eu diam pretium adipiscing. <span id="especial">Nunc elit elit, vehicula vulputate</span>, venenatis in,
+posuere id, lorem. Etiam sagittis, tellus in ultrices accumsan, diam nisi feugiat ante, eu congue magna mi non nisl.</p>
+
+<p>Vivamus ultrices aliquet augue. <a href="#">Donec arcu pede, pretium vitae</a>, rutrum aliquet, tincidunt blandit, pede.
+Aliquam in nisi. Suspendisse volutpat. Nulla facilisi. Ut ullamcorper nisi quis mi.</p>
+</div>
+
+</body>
+</html>

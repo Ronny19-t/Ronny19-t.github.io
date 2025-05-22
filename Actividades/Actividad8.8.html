@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de CSS</title>
+        <style>
+
+          /*Editar el estilo de borde de tabla*/
+          table{
+            border-collapse: collapse;
+            
+          }
+
+          td{
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            font-size: 30px;
+          }
+          /*Colores de fondo en las columnas*/
+            .red{
+                background-color: red;
+            }
+
+            .green{
+                background-color: green;
+            }
+
+            .blue{
+                background-color: blue;
+            }
+            
+            /*Colores de las palabras en las celdas, clasificados por categorias de letra1-7*/
+            .letra{
+                color: #008080;
+            }
+
+            .letra1{ 
+              color: red;
+            }
+
+            .letra2{ 
+              color: blue;
+            }
+
+            .letra3{ 
+              color: orange;
+            }
+
+            .letra4{ 
+              color: purple;
+            }
+
+            .letra5{ 
+              color: olive;
+            }
+
+            .letra6{ 
+              color: fuchsia;
+            }
+
+            .letra7{ 
+              color: green;
+            }
+
+            /*Hola Antonio, si lees esto, soy consciente de que faltan los bordes en color,
+              he probado alguna cosa pero o se eliminan o hago otra cosa.*/
+        </style>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <td class="letra">teal</td>
+        <td class="red letra">teal</td>
+        <td class="green letra">teal</td>
+        <td class="blue letra">teal</td>
+      </tr>
+      <tr>
+        <td class="letra1">red</td>
+        <td class="red letra1">red</td>
+        <td class="green letra1">red</td>
+        <td class="blue letra1">red</td>
+      </tr>
+      <tr>
+        <td class="letra2">blue</td>
+        <td class="red letra2">blue</td>
+        <td class="green letra2">blue</td>
+        <td class="blue letra2">blue</td>
+      </tr>
+      <tr>
+        <td class="letra3">orange</td>
+        <td class="red letra3">orange</td>
+        <td class="green letra3">orange</td>
+        <td class="blue letra3">orange</td>
+      </tr>
+      <tr>
+        <td class="letra4">purple</td>
+        <td class="red letra4">purple</td>
+        <td class="green letra4">purple</td>
+        <td class="blue letra4">purple</td>
+      </tr>
+      <tr>
+        <td class="letra5">olive</td>
+        <td class="red letra5">olive</td>
+        <td class="green letra5">olive</td>
+        <td class="blue letra5">olive</td>
+      </tr>
+      <tr>
+        <td class="letra6">fuchsia</td>
+        <td class="red letra6">fuchsia</td>
+        <td class="green letra6">fuchsia</td>
+        <td class="blue letra6">fuchisa</td>
+      </tr>
+      <tr>
+        <td class="letra7">green</td>
+        <td class="red letra7">green</td>
+        <td class="green letra7">green</td>
+        <td class="blue letra7">green</td>
+      </tr>
+    </table>
+  </body>
+</html>
