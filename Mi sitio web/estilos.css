@@ -1,0 +1,39 @@
+#index{
+    background-color: black;
+}
+
+ h1{
+    color: #005577;
+ }
+
+ .listlink{
+    border: 1px solid grey;
+    margin: 15px;
+    padding: 15px;   
+ }
+
+ table{
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 10px;
+ }
+
+ table,th,td {
+        border: 1px solid;
+ }
+
+ th,td  {
+    padding: 8px 12px;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
